@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "W:\\CS\\ProjektWdrozeniowy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|w:\\cs\\projektwdrozeniowy\\services\\csvhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|solutionrelative:services\\csvhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|w:\\cs\\projektwdrozeniowy\\models\\countryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|solutionrelative:models\\countryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|w:\\cs\\projektwdrozeniowy\\models\\graphs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|solutionrelative:models\\graphs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|w:\\cs\\projektwdrozeniowy\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|w:\\cs\\projektwdrozeniowy\\services\\ziphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|solutionrelative:services\\ziphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|w:\\cs\\projektwdrozeniowy\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C1255530-968B-40D7-9D97-9652AAF32077}|ProjektWdrozeniowy.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CountryInfo.cs",
+              "DocumentMoniker": "W:\\CS\\ProjektWdrozeniowy\\Models\\CountryInfo.cs",
+              "RelativeDocumentMoniker": "Models\\CountryInfo.cs",
+              "ToolTip": "W:\\CS\\ProjektWdrozeniowy\\Models\\CountryInfo.cs",
+              "RelativeToolTip": "Models\\CountryInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA0wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:10:01.399Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Graphs.cs",
+              "DocumentMoniker": "W:\\CS\\ProjektWdrozeniowy\\Models\\Graphs.cs",
+              "RelativeDocumentMoniker": "Models\\Graphs.cs",
+              "ToolTip": "W:\\CS\\ProjektWdrozeniowy\\Models\\Graphs.cs",
+              "RelativeToolTip": "Models\\Graphs.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:36:49.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ZipHandler.cs",
+              "DocumentMoniker": "W:\\CS\\ProjektWdrozeniowy\\Services\\ZipHandler.cs",
+              "RelativeDocumentMoniker": "Services\\ZipHandler.cs",
+              "ToolTip": "W:\\CS\\ProjektWdrozeniowy\\Services\\ZipHandler.cs",
+              "RelativeToolTip": "Services\\ZipHandler.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:35:57.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CSVHandler.cs",
+              "DocumentMoniker": "W:\\CS\\ProjektWdrozeniowy\\Services\\CSVHandler.cs",
+              "RelativeDocumentMoniker": "Services\\CSVHandler.cs",
+              "ToolTip": "W:\\CS\\ProjektWdrozeniowy\\Services\\CSVHandler.cs",
+              "RelativeToolTip": "Services\\CSVHandler.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:35:21.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "W:\\CS\\ProjektWdrozeniowy\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
+              "ToolTip": "W:\\CS\\ProjektWdrozeniowy\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAIwK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T23:10:20.848Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e410665e-e052-4985-9788-6c8d0e14925d",
+        "Display": 0,
+        "X": 32,
+        "Y": 68,
+        "Width": 1528,
+        "Height": 784,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "W:\\CS\\ProjektWdrozeniowy\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
+              "ToolTip": "W:\\CS\\ProjektWdrozeniowy\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T15:24:37.402Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
