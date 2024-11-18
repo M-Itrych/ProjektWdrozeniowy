@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
         xmlns:local="clr-namespace:ProjektWdrozeniowy"
         mc:Ignorable="d"
         Title="GraphMasters" Height="450" Width="800"
@@ -19,71 +20,77 @@
             <ColumnDefinition Width="100"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="1" Grid.Column="2">
+        <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
             <Grid Background="#0f0f2d" Grid.Row="0">
                 <ComboBox Name="countrySelect" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"
-              ItemsSource="{Binding Countries}" SelectionChanged="DisableSelection">
+                          ItemsSource="{Binding Countries}" SelectionChanged="DisableSelection">
+                    <!-- Set up consistent styling for ComboBox items -->
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
-                            <CheckBox Content="{Binding Country}" IsChecked="{Binding IsSelected}" />
+                            <CheckBox Content="{Binding Country}"
+                                      IsChecked="{Binding IsSelected}"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Center"
+                                      Checked="ShowData"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
+
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
                 </ComboBox>
             </Grid>
-            <Grid Grid.Row="1">
-                <Image Source="/Assets/Images/TemplateGraph.png" />
+            <Grid Grid.Row="1" Name="PlotGrid">
             </Grid>
         </Grid>
         <Grid Background="#0f0f2d"
               Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
-                 <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Image Source="/Assets/Images/AppLogo.png" Grid.Column="6" />
-
-
             <TextBlock Grid.Column="11" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Medium">
                 <Hyperlink NavigateUri="https://github.com" RequestNavigate="OpenGithub" TextDecorations="None" Foreground="White">
                     GitHub
                 </Hyperlink>
             </TextBlock>
-
-
             <Button Content="X"
-                Grid.Column="12"
-                Width="20"
-                Height="20"
-                BorderThickness="0"
-                Foreground="White"
-                Click="ExitApp"
+                    Grid.Column="12"
+                    Width="20"
+                    Height="20"
+                    BorderThickness="0"
+                    Foreground="White"
+                    Click="ExitApp"
                     Cursor="Hand">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="#FF630000"
                                 CornerRadius="20">
                             <ContentPresenter HorizontalAlignment="Center"
-                                  VerticalAlignment="Center"/>
+                                              VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-
         </Grid>
         <Menu Grid.Row="1" Background="#0f0f2d">
             <TextBlock Text="Wybierz typ:" FontWeight="ExtraBlack" Foreground="White" />
@@ -94,6 +101,5 @@
             <MenuItem Header="Option 4" FontWeight="Medium" Foreground="White" Click="SelectType"/>
             <MenuItem Header="Option 5" FontWeight="Medium" Foreground="White" Click="SelectType"/>
         </Menu>
-
     </Grid>
 </Window>

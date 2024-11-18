@@ -1,26 +1,29 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
-using Newtonsoft.Json;
 
 namespace ProjektWdrozeniowy
 {
     public partial class MainWindow : Window
     {
         private readonly ZipHandler _zipHandler;
+        private Graphs _graphs;
         public List<CountryInfo>? Countries { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
             _zipHandler = new ZipHandler();
+            _graphs = new Graphs(this); // Initialize Graphs class
 
             PrepareTempDirectory();
             StartDownloadsAsync();
@@ -48,10 +51,22 @@ namespace ProjektWdrozeniowy
 
                 LoadCountries();
                 this.DataContext = this;
+
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred while downloading or processing files: {ex.Message}");
+            }
+            try
+            {
+                _graphs.CreateImgGraph();
+                PlotGrid.Children.Add(_graphs.WpfPlot1);
+            }
+            catch (Exception ex2)
+            {
+                Debug.WriteLine(ex2.Message + "TEST");
+                throw;
             }
         }
 
@@ -83,7 +98,7 @@ namespace ProjektWdrozeniowy
                         country.IsSelected = false;
                     }
 
-                    Debug.WriteLine($"{Countries.Count} countries");
+                    Debug.WriteLine($"{Countries.Count} countries loaded.");
                     Dispatcher.Invoke(() =>
                     {
                         countrySelect.ItemsSource = Countries;
@@ -110,6 +125,16 @@ namespace ProjektWdrozeniowy
         {
             countrySelect.SelectedItem = null;
             countrySelect.IsDropDownOpen = true;
+        }
+
+        private void ShowData(object sender, EventArgs e)
+        {
+            var selectedCountries = Countries.Where(x => x.IsSelected).ToList();
+
+            foreach (var country in selectedCountries)
+            {
+                Debug.WriteLine(country.Country);
+            }
         }
 
         private void ExitApp(object sender, EventArgs e)
@@ -170,5 +195,6 @@ namespace ProjektWdrozeniowy
                 }
             }
         }
+
     }
 }
